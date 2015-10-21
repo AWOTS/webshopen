@@ -11,9 +11,9 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-    background-image: background-size:100%;
-    background-image: url('../Images/wallhaven-273501.jpg');
-    margin: 0;
+    background-image: url("http://www.placecage.com/1000/800");
+    background-size:100%;
+  margin: 0;
 }
 article,
 aside,
@@ -328,11 +328,6 @@ img {
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
-}
-.img-displayed{
-    display: block;
-    margin-left: auto;
-    margin-right: auto
 }
 .img-circle {
   border-radius: 50%;

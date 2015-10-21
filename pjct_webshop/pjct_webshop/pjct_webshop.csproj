@@ -92,6 +92,7 @@
     <Content Include="Contents\bootstrap.css" />
     <Content Include="Contents\bootstrap.min.css" />
     <Content Include="Contents\business-casual.css" />
+    <Content Include="Contents\SmileWithStyle.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\bg.jpg" />

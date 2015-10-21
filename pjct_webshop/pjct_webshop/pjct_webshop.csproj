@@ -99,11 +99,15 @@
     <Content Include="Images\slide-1.jpg" />
     <Content Include="Images\slide-2.jpg" />
     <Content Include="Images\slide-3.jpg" />
+    <Content Include="Images\smile-with-style-finish-logo.gif" />
     <Content Include="Images\wallhaven-273501.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\customCarousel.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +129,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Views\Main\Butik.cshtml" />
     <Content Include="Views\Main\Info.cshtml" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -126,6 +126,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Views\Main\Butik.cshtml" />
     <Content Include="Views\Main\Info.cshtml" />
+    <Content Include="Views\Main\Kassa.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

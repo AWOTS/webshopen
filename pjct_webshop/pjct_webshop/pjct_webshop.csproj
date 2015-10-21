@@ -124,9 +124,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Views\Main\Butik.cshtml" />
     <Content Include="Views\Main\Info.cshtml" />
     <Content Include="Views\Main\Kassa.cshtml" />
+    <Content Include="Views\Main\Smycken.cshtml" />
+    <Content Include="Views\Main\Heminredning.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

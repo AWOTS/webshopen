@@ -92,6 +92,7 @@
     <Content Include="Contents\bootstrap.css" />
     <Content Include="Contents\bootstrap.min.css" />
     <Content Include="Contents\business-casual.css" />
+    <Content Include="Contents\SmileWithStyle.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\bg.jpg" />
@@ -100,6 +101,7 @@
     <Content Include="Images\slide-2.jpg" />
     <Content Include="Images\slide-3.jpg" />
     <Content Include="Images\smile-with-style-finish-logo.gif" />
+    <Content Include="Images\wallhaven-273501.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\customCarousel.js" />

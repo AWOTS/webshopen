@@ -15,17 +15,17 @@
                             <div class="input-group col-md-5 pull-left">
 
                                 <span class="input-group-btn">
-                                    <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-minus"></span></a>
+                                    <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-minus-sign"></span></a>
                                 </span>
                                 <input type="text" class="form-control" placeholder="Antal">
                                 <span class="input-group-btn">
 
-                                    <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></a>
+                                    <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-plus-sign"></span></a>
                                 </span>
                             </div>
                             <div class=" pull-right">
                                 Ångra köp:
-                                <a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-eject"></span></a>
+                                <a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></a>
                             </div>
                         </div>
                     </td>
@@ -37,7 +37,26 @@
             </table>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="box  col-md-4">
+            <table class="table table-hover">
+                <tr>
+                <td>
+                    Summa:
+                    </td>
+                <td>
+                    X kr
+                </td>
+                </tr>
+                <tr><td>Frakt, inkl. 25% moms:</td><td>"if post, 29 kr else, 0 kr"</td></tr>
+                <tr><td>Moms, 25%:</td><td>"x*0.75"</td></tr>
+                <tr><td>Totalt, exkl. moms</td><td>"x*0.75+frakt"</td></tr>
+                <tr><td>Totalt, inkl. moms</td><td>"x+frakt"</td></tr>
+            </table>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
 </div>
 
 

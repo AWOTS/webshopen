@@ -8,28 +8,35 @@
             <table class="table">
                 <tr>
                     <td class="col-md-8">
-                        <img src="{imagePath}"/>
+                        <img src="{imagePath}" />
                     </td>
                     <td class="col-md-4">
-                        <table class="table">
-                            <tr>
-                                <th>Cancel:</th>
-                                <td><a href="#" class="btn btn-primary"><i class="icon-check icon-white"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#" class="btn btn-primary"><i class="icon-check icon-white"></i></a></td>
-                            </tr>
+                        <div class="clearfix">
+                            <div class="input-group col-md-5 pull-left">
 
-                        </table>
-</tdclass="col-md-8">
+                                <span class="input-group-btn">
+                                    <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-minus"></span></a>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Antal">
+                                <span class="input-group-btn">
+
+                                    <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></a>
+                                </span>
+                            </div>
+                            <div class=" pull-right">
+                                Ångra köp:
+                                <a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-eject"></span></a>
+                            </div>
+                        </div>
+                    </td>
                     @*<th>@Html.DisplayNameFor(x => temp.ProductName)</th>
-                    <th>@Html.DisplayNameFor(x => temp.ProductDescription)</th>
-                    <th>@Html.DisplayNameFor(x => temp.ProductPrice)</th>*@
+                        <th>@Html.DisplayNameFor(x => temp.ProductDescription)</th>
+                        <th>@Html.DisplayNameFor(x => temp.ProductPrice)</th>*@
 
                 </tr>
-        </table>
+            </table>
+        </div>
     </div>
-</div>
 
 </div>
 

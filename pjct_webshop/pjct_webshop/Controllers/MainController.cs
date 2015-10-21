@@ -23,5 +23,9 @@ namespace pjct_webshop.Controllers
         {
             return View();
         }
+        public ActionResult Kassa()
+        {
+            return View();
+        }
     }
 }

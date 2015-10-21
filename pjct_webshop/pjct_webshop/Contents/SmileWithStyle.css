@@ -22,3 +22,8 @@ img.displayed {
     float: left;
     width: 10%;
 }
+
+@font-face {
+    font-family: 'Sassy Molassy';
+    src: url('../fonts/Sassy Molassy.ttf') format('truetype');
+}

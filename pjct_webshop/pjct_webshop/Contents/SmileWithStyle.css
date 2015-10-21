@@ -19,11 +19,14 @@
 
 img.displayed {
     display: block;
-    float: left;
     width: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @font-face {
     font-family: 'Sassy Molassy';
     src: url('../fonts/Sassy Molassy.ttf') format('truetype');
 }
+
+

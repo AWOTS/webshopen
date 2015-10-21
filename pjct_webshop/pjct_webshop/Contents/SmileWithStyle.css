@@ -3,3 +3,22 @@
     background-size: 100%;
     margin: 0;
 }
+
+.address-bar {
+  display: inherit;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 40px;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: #606060;
+  text-shadow: 1px 1px 2px #606060;
+}
+
+img.displayed {
+    display: block;
+    float: left;
+    width: 10%;
+}

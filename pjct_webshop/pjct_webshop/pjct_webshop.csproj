@@ -129,6 +129,7 @@
     <Content Include="Views\Main\Kassa.cshtml" />
     <Content Include="Views\Main\Smycken.cshtml" />
     <Content Include="Views\Main\Heminredning.cshtml" />
+    <Content Include="fonts\Sassy Molassy.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

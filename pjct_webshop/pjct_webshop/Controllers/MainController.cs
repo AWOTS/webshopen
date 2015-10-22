@@ -27,5 +27,20 @@ namespace pjct_webshop.Controllers
         {
             return View();
         }
+
+        public ActionResult Heminredning()
+        {
+            return View();
+        }
+
+        public ActionResult Smycken()
+        {
+            return View();
+        }
+
+        public ActionResult AdminLogin()
+        {
+            return View();
+        }
     }
 }

@@ -29,6 +29,17 @@ img.displayed {
     src: url('../fonts/Sassy Molassy.ttf') format('truetype');
 }
 
+.grunker {
+    font-size: 10em;
+    color: white;
+}
+
+.SmileWithStyleLogo {
+    width: 20%;
+    float: right;
+    margin-top: 5%;
+}
+
 .navbar-brand {
   margin-left: auto;
   margin-right: auto;
@@ -38,6 +49,7 @@ img.displayed {
   font-size: 18px;
   line-height: 20px;
 }
+
 
 @media (min-width: 768px) {
   .navbar-nav {

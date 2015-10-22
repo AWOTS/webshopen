@@ -36,9 +36,19 @@ img.displayed {
 }
 
 .SmileWithStyleLogo {
-    width: 20%;
+    width: 10em;
     float: right;
     margin-top: 5%;
+}
+
+@media max-width: 1333px .SmileWithStyleLogo {
+    width: 7em;
+    float: right;
+    margin-top: 5%;                                                                           
+}
+
+.pull-right {
+    border-radius: 3px;
 }
 
 .navbar-brand {

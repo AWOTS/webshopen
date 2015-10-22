@@ -102,6 +102,7 @@
     <Content Include="Images\slide-3.jpg" />
     <Content Include="Images\smile-with-style-finish-logo.gif" />
     <Content Include="Images\wallhaven--273501.jpg" />
+    <Content Include="Scripts\adminLogin.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\customCarousel.js" />

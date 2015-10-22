@@ -189,7 +189,8 @@
     <Content Include="Views\Main\Smycken.cshtml" />
     <Content Include="Views\Main\Heminredning.cshtml" />
     <Content Include="fonts\Sassy Molassy.ttf" />
-    <Content Include="Views\Admin\AdminLogin.cshtml" />
+    <Content Include="Views\Main\AdminLogin.cshtml" />
+    <Content Include="Views\Main\_AdminLogin.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -200,6 +201,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

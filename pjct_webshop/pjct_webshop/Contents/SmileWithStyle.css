@@ -48,7 +48,8 @@ img.displayed {
 }
 
 .pull-right {
-    border-radius: 3px;
+    margin-top: 8%; 
+    padding: 0px 6px; 
 }
 
 .navbar-brand {

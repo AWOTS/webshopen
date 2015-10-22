@@ -2,7 +2,9 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>@ViewBag.Title</title>
     <script src="~/Scripts/jquery-1.10.2.js" rel="stylesheet"></script>
 
@@ -15,11 +17,13 @@
 <body>
 
 <div class="smilewithstyle-header">
-    <div class="">
-    <div class="clearfix">
-        <img class="displayed pull-left" img src="~/Images/smile-with-style-finish-logo.gif" />
-        <div class="brand pull-left" style="font-family:'Sassy Molassy'">Smile with Style</div>
-    </div>
+    <div class="row">
+            <div class="col-sm-4">
+                <img class="SmileWithStyleLogo" img src="~/Images/smile-with-style-finish-logo.gif" />
+            </div>
+            <div class="col-sm-8">
+                <div class="grunker" style="font-family: 'Sassy Molassy'">Smile with Style</div>
+            </div>
         </div>
 </div>
 
@@ -42,7 +46,7 @@
                         <a href="/Main/Index">Hem</a>
                     </li>
                     <li>
-                        <a href="/Main/Smycken">Smycken</a>
+                        <a href="Main/Smycken">Smycken</a>
                     </li>
                     <li>
                         <a href="/Main/Heminredning">Heminredning</a>

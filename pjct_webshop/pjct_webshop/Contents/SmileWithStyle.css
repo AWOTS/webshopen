@@ -8,6 +8,7 @@
   display: inherit;
   text-align: center;
   margin: 0;
+  margin-top: 5%;
   padding: 0 0 40px;
   font-size: 1.25em;
   text-transform: uppercase;
@@ -17,6 +18,14 @@
   text-shadow: 1px 1px 2px #606060;
 }
 
+.SmileWithStyleCopyright {
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+footer p {
+    padding: 0px;
+}
 img.displayed {
     display: block;
     width: 10%;

@@ -34,9 +34,11 @@ footer p {
 }
 img.displayed {
     display: block;
-    width: 50%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
 }
 
 @font-face {

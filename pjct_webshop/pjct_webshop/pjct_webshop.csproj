@@ -193,7 +193,6 @@
     <Content Include="Images\slide-3.jpg" />
     <Content Include="Images\smile-with-style-finish-logo.gif" />
     <Content Include="Images\wallhaven--273501.jpg" />
-    <Content Include="Scripts\adminLogin.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\customCarousel.js" />
@@ -224,7 +223,6 @@
     <Content Include="Views\Main\Smycken.cshtml" />
     <Content Include="Views\Main\Heminredning.cshtml" />
     <Content Include="fonts\Sassy Molassy.ttf" />
-    <Content Include="Views\Main\AdminLogin.cshtml" />
     <Content Include="Views\Main\_AdminLogin.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

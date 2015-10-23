@@ -45,7 +45,7 @@ namespace pjct_webshop.Controllers
 
         public ViewResult _AdminLogin()
         {
-            return PartialView();
+            return View();
         }
     }
 }

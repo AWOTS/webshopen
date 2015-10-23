@@ -93,9 +93,6 @@
     <Content Include="Contents\bootstrap.min.css" />
     <Content Include="Contents\business-casual.css" />
     <Content Include="Contents\SmileWithStyle.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -132,7 +129,65 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\bg.jpg" />
+    <Content Include="Images\HEADER.png" />
     <Content Include="Images\intro-pic.jpg" />
+    <Content Include="Images\ProductsRectangled\IndexPicture1_1200x600.jpg" />
+    <Content Include="Images\ProductsRectangled\IndexPicture2_1200x600.jpg" />
+    <Content Include="Images\ProductsRectangled\IndexPicture3_1200x600.jpg" />
+    <Content Include="Images\ProductsSquared\DSC_0504kopia_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0518_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0523_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0531_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0547_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0551_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0570_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0575_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0576_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0580_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0583_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0589_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0591_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0595_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0601_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0610_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0612_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0624_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0626_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0629_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0636_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0640_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0646_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0661_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0671_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0674_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0679_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0685_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0698_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0699_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0701_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0702_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0714_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0716_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0719_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0722_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0726_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0736_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0748_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0757_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0758_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0759_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0762_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0764_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0768_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0769_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0776_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0784_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0947_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0953_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0963_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0975_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0976_600x600.png" />
+    <Content Include="Images\ProductsSquared\DSC_0988_600x600.png" />
     <Content Include="Images\slide-1.jpg" />
     <Content Include="Images\slide-2.jpg" />
     <Content Include="Images\slide-3.jpg" />
@@ -142,12 +197,9 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\customCarousel.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -159,9 +211,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Views\Shared\_LayoutPage.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
@@ -174,10 +224,8 @@
     <Content Include="Views\Main\Smycken.cshtml" />
     <Content Include="Views\Main\Heminredning.cshtml" />
     <Content Include="fonts\Sassy Molassy.ttf" />
-    <Content Include="Views\Admin\AdminLogin.cshtml" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Main\AdminLogin.cshtml" />
+    <Content Include="Views\Main\_AdminLogin.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -188,6 +236,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

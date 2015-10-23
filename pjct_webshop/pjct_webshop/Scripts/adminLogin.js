@@ -2,7 +2,6 @@
 
     var $formLogin = $('#login-form');
     var $formLost = $('#lost-form');
-    var $formRegister = $('#register-form');
     var $divForms = $('#div-forms');
     var $modalAnimateTime = 300;
     var $msgAnimateTime = 150;

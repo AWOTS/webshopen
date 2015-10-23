@@ -26,27 +26,39 @@ namespace SmileWithStyleDB
             }
         }
 
+        private void CloseDatabaseConnection()
+        {
+            try
+            {
+                myConnection.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+        }
+
         private string GetImages(string input)
         {
-            var thisImage = "";
-            myParam = new SqlParameter("@Param1", SqlDbType.VarChar, 11);
+            myParam = new SqlParameter("@ArtNumber", SqlDbType.VarChar, 11);
             myParam.Value = input;
+            string thisImage = "";
 
             try
             {
                 var myCommand = new SqlCommand(
-                 "SELECT ImagePath FROM Procucts WHERE ArtNumber = @Param1", myConnection);
+                 "SELECT ImagePath FROM Procucts WHERE ArtNumber = @ArtNumber", myConnection);
                 myCommand.Parameters.Add(myParam);
                 while (myReader.Read())
                 {
-                    return myReader["ImagePath"].ToString();
+                    thisImage = myReader["ImagePath"].ToString();
                 }
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
             }
-            return myReader["ImagePath"].ToString();
+            return thisImage;
         }
     }
 }

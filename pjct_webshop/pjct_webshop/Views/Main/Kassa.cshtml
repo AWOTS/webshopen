@@ -1,4 +1,5 @@
 ﻿@{
+    ViewBag.Title = "Kassa";
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
@@ -25,7 +26,7 @@
                             </div>
                             <div class=" pull-right">
                                 Ångra köp:
-                                <a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a>
+                                <a href="~/Views/KassaKlar.cshtml" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a>
                             </div>
                         </div>
                     </td>
@@ -40,16 +41,23 @@
     <div class="row">
         <div class="col-md-3"></div>
         <div class="box  col-md-6">
+            <h3>Leveranssätt</h3>
             <label class="radio-inline"><input type="radio" name="optradio">Post, 29 kr</label>
             <label class="radio-inline"><input type="radio" name="optradio">Hämta i Stockholm, 0 kr</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="box  col-md-6">
             <table class="table table-hover">
                 <tr>
-                <td>
-                    Summa:
+                    <td>
+                        Summa:
                     </td>
-                <td>
-                    X kr
-                </td>
+                    <td>
+                        X kr
+                    </td>
                 </tr>
                 <tr><td>Frakt, inkl. 25% moms:</td><td>"if post, 29 kr else, 0 kr"</td></tr>
                 <tr><td>Moms, 25%:</td><td>"x*0.75"</td></tr>
@@ -59,26 +67,25 @@
         </div>
         <div class="col-md-3"></div>
     </div>
+
     <div class="row">
         <div class="col-md-3"></div>
 
         <div class="box col-md-6">
-                        <h6>Förnamn</h6>
-                    <input type="text" class="form-control" placeholder="Förnamn">
-                    <h6>Efternamn</h6>
-                    <input type="text" class="form-control" placeholder="Efternamn">
-                    <h6>Adress</h6>
-                    <input type="text" class="form-control" placeholder="Adress">
-                    <h6>Stad</h6>
-                    <input type="text" class="form-control" placeholder="Stad">
-                    <h6>Postnummer</h6>
-                    <input type="text" class="form-control" placeholder="Postnummer">
-                    <h6>Email</h6>
-                    <input type="text" class="form-control" placeholder="Email">
-                    <h6>Telefonnummer</h6>
-                    <input type="text" class="form-control" placeholder="Telefonnummer">
-
-             
+            <h6>Förnamn<label class="alert-warning">*</label></h6>
+            <input type="text" class="form-control" placeholder="Förnamn">
+            <h6>Efternamn<label class="alert-warning">*</label></h6>
+            <input type="text" class="form-control" placeholder="Efternamn">
+            <h6>Adress<label class="alert-warning">*</label></h6>
+            <input type="text" class="form-control" placeholder="Adress">
+            <h6>Stad<label class="alert-warning">*</label></h6>
+            <input type="text" class="form-control" placeholder="Stad">
+            <h6>Postnummer<label class="alert-warning">*</label></h6>
+            <input type="text" class="form-control" placeholder="Postnummer">
+            <h6>Email<label class="alert-warning">*</label></h6>
+            <input type="text" class="form-control" placeholder="Email">
+            <h6>Telefonnummer <label class="alert-warning">*</label></h6>
+            <input type="text" class="form-control" placeholder="Telefonnummer" required>
             <h6>Meddelande till butiken</h6>
             <input type="text" class="form-control" placeholder="Här skriver du om du har extra information om ordern">
         </div>
@@ -89,7 +96,7 @@
         <div class="box col-md-6">
             <div>
                 <label class="checkbox-inline"><input type="checkbox" value="">Jag godkänner </label>
-                <a> försäljningsvillkoren</a>
+                <a href=""> försäljningsvillkoren</a>
             </div>
             <h1></h1>
             <div>

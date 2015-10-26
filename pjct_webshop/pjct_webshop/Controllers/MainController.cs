@@ -42,6 +42,10 @@ namespace pjct_webshop.Controllers
         {
             return View();
         }
+        public ActionResult AdminPage()
+        {
+            return View();
+        }
 
         public ViewResult _AdminLogin()
         {

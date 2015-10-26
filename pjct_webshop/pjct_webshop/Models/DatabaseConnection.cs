@@ -9,8 +9,21 @@ namespace pjct_webshop.Models
 {
     public class DatabaseConnection
     {
-        Class1 class1 = new Class1();
+        private Class1 databaseClass1 = new Class1();
 
+        public DatabaseConnection ()
+        {
+            databaseClass1.DatabaseConnection();
+        }
 
+        public void ProductsInfo()
+        {
+            List<Product> products = databaseClass1.getProductInfo();
+        }
+
+        public void OrderInfo(int numberOfOrders)
+        {
+            List<Order> orders = databaseClass1.getOrderInfo(numberOfOrders);
+        }
     }
 }

@@ -96,6 +96,7 @@
     <Content Include="Contents\bootstrap.css" />
     <Content Include="Contents\bootstrap.min.css" />
     <Content Include="Contents\business-casual.css" />
+    <Content Include="Contents\GöransCSS.css" />
     <Content Include="Contents\SmileWithStyle.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />

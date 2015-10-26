@@ -11,10 +11,9 @@ namespace SmileWithStyleDB
     public class Class1
     {
         SqlConnection myConnection = new SqlConnection("Data Source = localhost");
-        private SqlParameter myParam;
         SqlDataReader myReader = null;
 
-        private void DatabaseConnection()
+        public void DatabaseConnection()
         {
             try
             {
@@ -26,7 +25,7 @@ namespace SmileWithStyleDB
             }
         }
 
-        private void CloseDatabaseConnection()
+        public void CloseDatabaseConnection()
         {
             try
             {
@@ -38,27 +37,52 @@ namespace SmileWithStyleDB
             }
         }
 
-        private string GetImages(string input)
+        public List<Product> getProductInfo()
         {
-            myParam = new SqlParameter("@ArtNumber", SqlDbType.VarChar, 11);
-            myParam.Value = input;
-            string thisImage = "";
+            Product product;
+            List <Product> products = new List<Product>();
 
             try
             {
                 var myCommand = new SqlCommand(
-                 "SELECT ImagePath FROM Procucts WHERE ArtNumber = @ArtNumber", myConnection);
-                myCommand.Parameters.Add(myParam);
+                 "SELECT * FROM Procucts" , myConnection);
                 while (myReader.Read())
                 {
-                    thisImage = myReader["ImagePath"].ToString();
+                    product = new Product();
+                    products.Add(product);
                 }
             }
+
             catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
             }
-            return thisImage;
+
+            return products;
+        }
+
+        public List<Order> getOrderInfo(int numberOfOrders)
+        {
+            Order order;
+            List<Order> orders = new List<Order>();
+
+            try
+            {
+                var myCommand = new SqlCommand(
+                 "SELECT TOP (@numberOfOrders) * FROM Order", myConnection);
+                while (myReader.Read())
+                {
+                    order = new Order();
+                    orders.Add(order);
+                }
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            return orders;
         }
     }
 }

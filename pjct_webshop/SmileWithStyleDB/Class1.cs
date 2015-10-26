@@ -11,7 +11,6 @@ namespace SmileWithStyleDB
     public class Class1
     {
         SqlConnection myConnection = new SqlConnection("Data Source = localhost");
-        private SqlParameter myParam;
         SqlDataReader myReader = null;
 
         public void DatabaseConnection()
@@ -38,29 +37,6 @@ namespace SmileWithStyleDB
             }
         }
 
-        //public string GetImages(string input)
-        //{
-        //    myParam = new SqlParameter("@ArtNumber", SqlDbType.VarChar, 11);
-        //    myParam.Value = input;
-        //    string thisImage = "";
-
-        //    try
-        //    {
-        //        var myCommand = new SqlCommand(
-        //         "SELECT ImagePath FROM Procucts WHERE ArtNumber = @ArtNumber", myConnection);
-        //        myCommand.Parameters.Add(myParam);
-        //        while (myReader.Read())
-        //        {
-        //            thisImage = myReader["ImagePath"].ToString();
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e.ToString());
-        //    }
-        //    return thisImage;
-        //}
-
         public List<Product> getProductInfo()
         {
             Product product;
@@ -83,6 +59,30 @@ namespace SmileWithStyleDB
             }
 
             return products;
+        }
+
+        public List<Order> getOrderInfo(int numberOfOrders)
+        {
+            Order order;
+            List<Order> orders = new List<Order>();
+
+            try
+            {
+                var myCommand = new SqlCommand(
+                 "SELECT TOP (@numberOfOrders) * FROM Order", myConnection);
+                while (myReader.Read())
+                {
+                    order = new Order();
+                    orders.Add(order);
+                }
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            return orders;
         }
     }
 }

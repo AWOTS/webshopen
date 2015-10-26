@@ -20,5 +20,10 @@ namespace pjct_webshop.Models
         {
             List<Product> products = databaseClass1.getProductInfo();
         }
+
+        public void OrderInfo(int numberOfOrders)
+        {
+            List<Order> orders = databaseClass1.getOrderInfo(numberOfOrders);
+        }
     }
 }

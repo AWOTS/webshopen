@@ -208,6 +208,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DatabaseConnection.cs" />
+    <Compile Include="Models\Kassa_model.cs" />
+    <Compile Include="Models\Order_model.cs" />
+    <Compile Include="Models\Produkt_model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -236,7 +239,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Admin\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SmileWithStyleDB\SmileWithStyleDB.csproj">

@@ -226,11 +226,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Views\Main\Info.cshtml" />
     <Content Include="Views\Main\Kassa.cshtml" />
-    <Content Include="Views\Main\Smycken.cshtml" />
     <Content Include="Views\Main\Heminredning.cshtml" />
     <Content Include="fonts\Sassy Molassy.ttf" />
     <Content Include="Views\Main\AdminPage.cshtml" />
     <Content Include="Views\Main\AdminLogin.cshtml" />
+    <Content Include="Views\Main\Halsband.cshtml" />
+    <Content Include="Views\Main\Armband.cshtml" />
+    <Content Include="Views\Main\Ringar.cshtml" />
+    <Content Include="Views\Main\Örhängen.cshtml" />
+    <Content Include="Views\Main\Töjningar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

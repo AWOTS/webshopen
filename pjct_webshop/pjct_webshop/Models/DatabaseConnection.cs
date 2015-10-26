@@ -18,7 +18,7 @@ namespace pjct_webshop.Models
 
         public void ProductsInfo()
         {
-            databaseClass1.
+            List<Product> products = databaseClass1.getProductInfo();
         }
     }
 }

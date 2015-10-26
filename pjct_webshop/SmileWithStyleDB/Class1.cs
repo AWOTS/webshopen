@@ -61,7 +61,7 @@ namespace SmileWithStyleDB
         //    return thisImage;
         //}
 
-        public <Product> getProductInfo()
+        public List<Product> getProductInfo()
         {
             Product product;
             List <Product> products = new List<Product>();
@@ -81,6 +81,8 @@ namespace SmileWithStyleDB
             {
                 Console.WriteLine(e.ToString());
             }
+
+            return products;
         }
     }
 }

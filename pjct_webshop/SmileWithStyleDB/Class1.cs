@@ -40,12 +40,12 @@ namespace SmileWithStyleDB
         public List<Product> getProductInfo()
         {
             Product product;
-            List <Product> products = new List<Product>();
+            List<Product> products = new List<Product>();
 
             try
             {
                 var myCommand = new SqlCommand(
-                 "SELECT * FROM Procucts" , myConnection);
+                 "SELECT * FROM Procucts", myConnection);
                 while (myReader.Read())
                 {
                     product = new Product();
@@ -66,23 +66,30 @@ namespace SmileWithStyleDB
             Order order;
             List<Order> orders = new List<Order>();
 
-            try
+            if (numberOfOrders > 0 && numberOfOrders < 500)
             {
-                var myCommand = new SqlCommand(
-                 "SELECT TOP (@numberOfOrders) * FROM Order", myConnection);
-                while (myReader.Read())
+                try
                 {
-                    order = new Order();
-                    orders.Add(order);
+                    var myCommand = new SqlCommand(
+                     "SELECT TOP (@numberOfOrders) * FROM Order", myConnection);
+                    while (myReader.Read())
+                    {
+                        order = new Order();
+                        orders.Add(order);
+                    }
                 }
-            }
 
-            catch (Exception e)
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.ToString());
+                }
+
+                return orders;
+            }
+            else
             {
-                Console.WriteLine(e.ToString());
+                return orders;
             }
-
-            return orders;
         }
     }
 }

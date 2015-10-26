@@ -209,6 +209,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DatabaseConnection.cs" />
+    <Compile Include="Models\Kassa_model.cs" />
+    <Compile Include="Models\Order_model.cs" />
+    <Compile Include="Models\Produkt_model.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

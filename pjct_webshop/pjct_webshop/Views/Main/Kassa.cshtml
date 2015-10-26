@@ -13,12 +13,7 @@
   $(function() {
     $( "#dialog" ).dialog({
       autoOpen: false,
-      show: {
-        effect: "blind",
-        duration: 309
-      },
-    });
-
+    });       
     $( "#opener" ).click(function() {
       $( "#dialog" ).dialog( "open" );
     });
@@ -125,7 +120,7 @@
                     <p>Ett mail kommer skickas med information om köpet. Betalning görs till Swishnummer 0767117187. När vi fått bekräftelse på din betalning skickar vi dina varor. </p>
                       </div>
             <div>
-                <a href="#" class="btn btn-success" id="opener">Slutför köp</a>
+                <a class="btn btn-success" id="opener">Slutför köp</a>
             </div>
         </div>
         <div class="col-md-3"></div>

@@ -1,8 +1,13 @@
-﻿using System;
+﻿using pjct_webshop.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.IO;
+using System.Web.UI;
+using System.Data.Sql;
+using System.Data.SqlClient;
 
 namespace pjct_webshop.Controllers
 {
@@ -42,6 +47,20 @@ namespace pjct_webshop.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AdminLogin(User u)
+        {
+            if (ModelState.IsValid)
+            {
+                DatabaseConnection dc = new DatabaseConnection();
+                
+            }
+
+            return View(u);
+        }
+
         public ActionResult AdminPage()
         {
             return View();

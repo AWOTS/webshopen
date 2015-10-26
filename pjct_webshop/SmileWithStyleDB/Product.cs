@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SmileWithStyleDB
 {
-    class Product
+    public class Product
     {
         public string Type { get; set; }
         public string Name { get; set; }

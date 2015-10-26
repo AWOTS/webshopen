@@ -4,10 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.IO;
-using System.Web.UI;
-using System.Data.Sql;
-using System.Data.SqlClient;
+using pjct_webshop.Models;
 
 namespace pjct_webshop.Controllers
 {
@@ -50,23 +47,17 @@ namespace pjct_webshop.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult AdminLogin(User u)
+        public ActionResult AdminLogin(string name, string password)
         {
-            if (ModelState.IsValid)
+            if ("admin".Equals(name) && "123".Equals(password))
             {
-                DatabaseConnection dc = new DatabaseConnection();
-                
+                Session["user"] = new User() {Login = name, Name = "Nico-Lina Wernholm"};
+                return RedirectToAction("AdminPage", "Main");
             }
-
-            return View(u);
-        }
-
-        public ActionResult AdminPage()
-        {
             return View();
         }
 
-        public ViewResult _AdminLogin()
+        public ActionResult AdminPage()
         {
             return View();
         }

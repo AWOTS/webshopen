@@ -89,10 +89,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\TestDB.mdf" />
-    <Content Include="App_Data\TestDB_log.ldf">
-      <DependentUpon>TestDB.mdf</DependentUpon>
-    </Content>
     <Content Include="Contents\bootstrap.css" />
     <Content Include="Contents\bootstrap.min.css" />
     <Content Include="Contents\business-casual.css" />
@@ -212,7 +208,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Connection.cs" />
     <Compile Include="Models\DatabaseConnection.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -241,6 +236,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>

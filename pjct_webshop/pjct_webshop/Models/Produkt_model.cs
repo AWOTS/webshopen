@@ -16,7 +16,7 @@ namespace pjct_webshop.Models
             name = p.Name;
             descripton = p.Description;
         //  price = p.
-                Type = p.Type;
+                type = p.Type;
             imgSource = p.ImagePath;
             amount = p.Quantity;
             availableWhenOutOfStock = p.AvailableWhenSold;

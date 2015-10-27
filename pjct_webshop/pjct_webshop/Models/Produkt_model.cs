@@ -7,6 +7,8 @@ namespace pjct_webshop.Models
 {
     public class Produkt_model
     {
+        public Produkt_model()
+        { }
         public string name { get; set; }
         public string descripton { get; set; }
         public string type { get; set; }

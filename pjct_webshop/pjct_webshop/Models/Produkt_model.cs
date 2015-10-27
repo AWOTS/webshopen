@@ -15,8 +15,8 @@ namespace pjct_webshop.Models
         {
             name = p.Name;
             descripton = p.Description;
-        //  price = p.
-                type = p.Type;
+            price = p.Price;
+            type = p.Type;
             imgSource = p.ImagePath;
             amount = p.Quantity;
             availableWhenOutOfStock = p.AvailableWhenSold;
@@ -27,7 +27,7 @@ namespace pjct_webshop.Models
         {
             Product p = new Product() { Name = this.name };
             Class1 c1 = new Class1();
-            //c1.saveNewProduct(p);
+            c1.saveNewProduct(p);
         }
         public string name { get; set; }
         public string descripton { get; set; }

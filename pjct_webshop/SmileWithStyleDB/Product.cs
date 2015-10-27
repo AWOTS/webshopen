@@ -15,6 +15,7 @@ namespace SmileWithStyleDB
         public int ArtNumber { get; set; }
         public int Quantity { get; set; }
         public string ImagePath { get; set; }
-        public bool AvailableWhenSold { get; set; }    
+        public bool AvailableWhenSold { get; set; } 
+        public int Price { get; set; }   
     }
 }

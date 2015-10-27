@@ -34,7 +34,7 @@ namespace pjct_webshop.Controllers
         {
             AllProduct_model ap = new AllProduct_model();
             List<Produkt_model> modelList = new List<Produkt_model>();
-            modelList.AddRange(ap.lista.FindAll(x => x.type == "Heminredning"));
+            modelList.AddRange(ap.lista.FindAll(x => x.type.Equals("Heminredning")));
             return View(modelList);
         }
 

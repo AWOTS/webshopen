@@ -61,6 +61,32 @@ namespace SmileWithStyleDB
             return products;
         }
 
+        public List<Product> AddNewProduct(Product newProduct)
+        {
+            Product product;
+            List<Product> products = new List<Product>();
+
+            try
+            {
+                var myCommand = new SqlCommand(
+                 "INSERT INTO Procucts VALUES", myConnection);
+
+               // "SELECT * FROM Procucts", myConnection);
+                while (myReader.Read())
+                {
+                    product = new Product();
+                    products.Add(product);
+                }
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            return products;
+        }
+
         public List<Order> getOrderInfo(int numberOfOrders)
         {
             Order order;

@@ -55,12 +55,12 @@ namespace pjct_webshop.Controllers
 
 
 
-            if ()
-            {
-                Session["user"] = new User() {Login = name, Name = "Nico-Lina Wernholm"};
-                return RedirectToAction("AdminPage", "Main");
-            }
-            return View();
+            //if ()
+            //{
+            //    Session["user"] = new User() {Login = name, Name = "Nico-Lina Wernholm"};
+            //    return RedirectToAction("AdminPage", "Main");
+            //}
+            return View("AdminPage");
         }
 
         public ActionResult AdminPage()

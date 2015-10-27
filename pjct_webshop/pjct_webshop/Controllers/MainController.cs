@@ -54,8 +54,10 @@ namespace pjct_webshop.Controllers
             var dbCommand = new SqlCommand();
 
 
+            
 
-            if ()
+
+            if ("admin".Equals(name) && "123".Equals(password))
             {
                 Session["user"] = new User() {Login = name, Name = "Nico-Lina Wernholm"};
                 return RedirectToAction("AdminPage", "Main");

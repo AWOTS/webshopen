@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using pjct_webshop.Models;
+using System.Data.SqlClient;
 
 namespace pjct_webshop.Controllers
 {
@@ -49,7 +50,12 @@ namespace pjct_webshop.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult AdminLogin(string name, string password)
         {
-            if ("admin".Equals(name) && "123".Equals(password))
+            var dbConnect = new DatabaseConnection();
+            var dbCommand = new SqlCommand();
+
+
+
+            if ()
             {
                 Session["user"] = new User() {Login = name, Name = "Nico-Lina Wernholm"};
                 return RedirectToAction("AdminPage", "Main");

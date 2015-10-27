@@ -32,10 +32,12 @@ namespace pjct_webshop.Models
             {
                 SqlCommand myCommand = new SqlCommand("uspLogin", conObj);
                 myCommand.CommandType = CommandType.StoredProcedure;
+                myCommand.Parameters.Clear();
                 myCommand.Parameters.Add(new SqlParameter("@UserName", u.UserName));
                 myCommand.Parameters.Add(new SqlParameter("@Password", u.Password));
                 conObj.Open();
-                return Convert.ToInt32(myCommand.ExecuteScalar());
+                var a = myCommand.ExecuteNonQuery();
+                return 2;
             }
         }
     }

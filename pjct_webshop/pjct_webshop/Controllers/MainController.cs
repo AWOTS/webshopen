@@ -103,7 +103,7 @@ namespace pjct_webshop.Controllers
             }
             else
             {
-                return RedirectToAction("Index", "Main");
+                return RedirectToAction("AdminPage", "Main");
             }
 
         }

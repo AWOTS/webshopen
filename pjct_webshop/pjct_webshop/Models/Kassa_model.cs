@@ -11,4 +11,6 @@ namespace pjct_webshop.Models
         public int antal { get; set; }
         public int totalSumma { get; set; }
     }
+
+
 }

@@ -92,6 +92,7 @@
     <Content Include="Contents\bootstrap.css" />
     <Content Include="Contents\bootstrap.min.css" />
     <Content Include="Contents\business-casual.css" />
+    <Content Include="Contents\GöransCSS.css" />
     <Content Include="Contents\SmileWithStyle.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
@@ -207,6 +208,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DatabaseConnection.cs" />
+    <Compile Include="Models\Kassa_model.cs" />
+    <Compile Include="Models\Order_model.cs" />
+    <Compile Include="Models\Produkt_model.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -220,9 +226,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Views\Main\Info.cshtml" />
     <Content Include="Views\Main\Kassa.cshtml" />
-    <Content Include="Views\Main\Smycken.cshtml" />
     <Content Include="Views\Main\Heminredning.cshtml" />
     <Content Include="fonts\Sassy Molassy.ttf" />
+    <Content Include="Views\Main\AdminPage.cshtml" />
+    <Content Include="Views\Main\AdminLogin.cshtml" />
+    <Content Include="Views\Main\Halsband.cshtml" />
+    <Content Include="Views\Main\Armband.cshtml" />
+    <Content Include="Views\Main\Ringar.cshtml" />
+    <Content Include="Views\Main\Örhängen.cshtml" />
+    <Content Include="Views\Main\Töjningar.cshtml" />
     <Content Include="Views\Main\Kontaktinfo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -233,8 +245,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Admin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmileWithStyleDB\SmileWithStyleDB.csproj">
+      <Project>{87e5f361-e106-41fa-9de0-f92f36fc4197}</Project>
+      <Name>SmileWithStyleDB</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

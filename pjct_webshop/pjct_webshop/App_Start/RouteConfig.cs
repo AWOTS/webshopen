@@ -12,6 +12,9 @@ namespace pjct_webshop
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            //routes.IgnoreRoute("Main/AdminPage");
+
+
 
             routes.MapRoute(
                 name: "Default",

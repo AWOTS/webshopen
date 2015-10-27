@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pjct_webshop.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -43,7 +44,19 @@ namespace pjct_webshop.Controllers
             return View();
         }
 
-        public ViewResult _AdminLogin()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AdminLogin(string name, string password)
+        {
+            if ("admin".Equals(name) && "123".Equals(password))
+            {
+                Session["user"] = new User() {Login = name, Name = "Nico-Lina Wernholm"};
+                return RedirectToAction("AdminPage", "Main");
+            }
+            return View();
+        }
+
+        public ActionResult AdminPage()
         {
             return View();
         }

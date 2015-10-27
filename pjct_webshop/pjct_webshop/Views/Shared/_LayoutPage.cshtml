@@ -15,9 +15,9 @@
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
-    <img class="displayed" src="~/Images/HEADER.png" />
-
+    <a href="~/Main/Index">
+        <img class="displayed" src="~/Images/HEADER.png" />
+    </a>
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -36,8 +36,27 @@
                     <li>
                         <a href="/Main/Index">Hem</a>
                     </li>
-                    <li>
-                        <a href="Main/Smycken">Smycken</a>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Smycken <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/Main/Halsband">Halsband</a>
+                            </li>
+                            <li>
+                                <a href="/Main/Armband">Armband</a>
+                            </li>
+                            <li>
+                                <a href="/Main/Ringar">Ringar</a>
+                            </li>
+                            <li>
+                                <a href="/Main/Örhängen">Örhängen</a>
+                            </li>
+                            <li>
+                                <a href="/Main/Töjningar">Töjningar</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="/Main/Heminredning">Heminredning</a>
@@ -89,7 +108,7 @@
 
             <div class="col-lg-12 text-center SmileWithStyleCopyright">
                 <p>
-                    Copyright <a href="/Main/_AdminLogin">
+                    Copyright <a href="/Main/AdminLogin">
                         <span class="glyphicon glyphicon-copyright-mark"> </span>
                     </a> Smile with Style 2015
                 </p>

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using SmileWithStyleDB;
 
 namespace pjct_webshop.Models
 {
@@ -36,5 +37,10 @@ namespace pjct_webshop.Models
         public int amount { get; set; }
         public bool availableWhenOutOfStock { get; set; }
         public int Id { get; private set; }
+        
+        public void saveProduct()
+        {
+            Product p =new Product() {Name = this.name};
+        }
     }
 }

@@ -8,49 +8,28 @@
 
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
-    <table>
-        <tr>
-            <td>@Html.LabelFor(a => a.Name)</td>
-            <td>@Html.TextBoxFor(a => a.Name)</td>
-            <td>@Html.ValidationMessageFor(a => a.Name)</td>
-        </tr>
-        <tr>
-            <td>
-            <td>@Html.LabelFor(a => a.Password)</td>
-            <td>@Html.TextBoxFor(a => a.Password)</td>
-            <td>@Html.ValidationMessageFor(a => a.Password)</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <input type="submit" value="Logga in" />
-            </td>
-        </tr>
-    </table>
-}
-
-@*<div class="container">
-    <div class="row">
-        <div class="col-lg-12 text-center SmileWithStyleCopyright">
-            <p>
-                Admin login
-                <span class="glyphicon glyphicon-log-in"> </span>
-            </p>
-            <p>
-                <fieldset>
-                    <label for="email">Namn</label>
-                    <input type="text" name="email" id="email" value="Name / Email" class="text ui-widget-content ui-corner-all">
-                    <label for="password">Lösenord</label>
-                    <input type="password" name="password" id="password" value="********" class="text ui-widget-content ui-corner-all">
-                    <br />
-                    <br />
-                    <br />
-                    <input type="submit" value="Logga in" />
-                </fieldset>
-            </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center SmileWithStyleCopyright">
+                <p>
+                    Admin login
+                    <span class="glyphicon glyphicon-log-in"> </span>
+                </p>
+                <p>
+                    <fieldset>
+                        <label for="Name">Namn</label>
+                        @Html.EditorFor(a => a.Name, new { htmlAttributes = new { @class = "stylesheet", placeholder = "Namn" } })
+                        <label for="Password">Lösenord</label>
+                        @Html.EditorFor(a => a.Password, new { htmlAttributes = new { @class = "stylesheet", placeholder = "Lösenord" } })
+                        <br />
+                        <br />
+                        <br />
+                        <input type="submit" value="Logga in" />
+                    </fieldset>
+                </p>
+            </div>
         </div>
     </div>
-</div>*@
 }
 
 

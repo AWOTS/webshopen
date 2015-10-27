@@ -10,7 +10,7 @@ namespace SmileWithStyleDB
 {
     public class Class1
     {
-        SqlConnection myConnection = new SqlConnection("Data Source = localhost");
+        SqlConnection myConnection = new SqlConnection("localhost/SQLEXPRESS; Catalog = db_smileWithStyle; Integrated Security = true");
         SqlDataReader myReader = null;
 
         public void DatabaseConnection()

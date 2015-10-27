@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using pjct_webshop.Models;
 using System.Data.SqlClient;
 
 namespace pjct_webshop.Controllers
@@ -46,20 +45,40 @@ namespace pjct_webshop.Controllers
             return View();
         }
 
+        UserLogic UL = new UserLogic();
+        User UserClass = new User();
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult AdminLogin(string name, string password)
+        public ActionResult AdminLogin(User u)
         {
-            var dbConnect = new DatabaseConnection();
-            var dbCommand = new SqlCommand();
-
-            if ("admin".Equals(name) && "123".Equals(password))
+            string message = "";
+            if (ModelState.IsValid)
             {
-                Session["user"] = new User() {Login = name, Name = "Nico-Lina Wernholm"};
-                return RedirectToAction("AdminPage", "Main");
+                if (UL.CheckUserLogin(UserClass) > 0)
+                {
+                    message = "Succé!";
+                }
+                else
+                {
+                    message = "Användarnamnet eller lösenordet var ingen succé.";
+                }
             }
 
-            return View();
+            else
+            {
+                message = "Alla fält måste vara ifyllda.";
+            }
+
+            if (Request.IsAjaxRequest())
+            {
+                return Json(message, JsonRequestBehavior.AllowGet);
+            }
+            else
+            {
+                return RedirectToAction("Index", "Main");
+            }
+
         }
 
         public ActionResult AdminPage()

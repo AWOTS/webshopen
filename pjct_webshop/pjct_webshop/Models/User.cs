@@ -6,15 +6,19 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
+using System.Threading;
+using System.Text;
+
 
 namespace pjct_webshop.Models
 {
     public class User
     {
-        public string Login { get; set; }
-        [Required(ErrorMessage = "Användarnamn behövs för att logga in.", AllowEmptyStrings = false)]
-        public string Name { get; set; }
-        [Required(ErrorMessage = "Lösenord behövs för att logga in.", AllowEmptyStrings = false)]
+        public int UserID { get; set; }
+        [Required]
+        public string UserName { get; set; }
+        [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
     }
@@ -28,9 +32,11 @@ namespace pjct_webshop.Models
             {
                 SqlCommand myCommand = new SqlCommand("uspLogin", conObj);
                 myCommand.CommandType = CommandType.StoredProcedure;
-                myCommand.Parameters.Add(new SqlParameter("@UserName", UserId));
-
+                myCommand.Parameters.Add(new SqlParameter("@UserName", u.UserName));
+                myCommand.Parameters.Add(new SqlParameter("@Password", u.Password));
+                conObj.Open();
+                return Convert.ToInt32(myCommand.ExecuteScalar());
             }
-}
-
+        }
     }
+}

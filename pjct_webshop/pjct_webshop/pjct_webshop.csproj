@@ -199,6 +199,7 @@
     <Content Include="Scripts\bootstrap.validate.js" />
     <Content Include="Scripts\customCarousel.js" />
     <Content Include="Scripts\Custom\AdminScript.js" />
+    <Content Include="Scripts\Custom\KassaScript.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.min.js" />
@@ -215,6 +216,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AllProduct_model.cs" />
     <Compile Include="Models\DatabaseConnection.cs" />
     <Compile Include="Models\Kassa_model.cs" />
     <Compile Include="Models\Order_model.cs" />

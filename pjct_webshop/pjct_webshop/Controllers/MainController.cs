@@ -41,7 +41,7 @@ namespace pjct_webshop.Controllers
 
         public ActionResult Halsband()
         {
-             AllProduct_model ap = new AllProduct_model();
+            AllProduct_model ap = new AllProduct_model();
             List<Produkt_model> modelList = new List<Produkt_model>();
             modelList.AddRange(ap.lista.FindAll(x => x.type == "Halsband"));
             return View(modelList);

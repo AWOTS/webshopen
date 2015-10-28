@@ -30,7 +30,7 @@ namespace pjct_webshop.Controllers
         }
         public ActionResult Kassa()
         {
-            return View();
+            return View(Controllers.MainController.varukorgsList);
         }
 
         public ActionResult Heminredning()

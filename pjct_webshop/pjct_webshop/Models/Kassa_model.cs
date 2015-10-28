@@ -9,11 +9,11 @@ namespace pjct_webshop.Models
     {
         public void AddToCart(Produkt_model temp)
         {
-            Controllers.MainController.Add(temp);
+            Controllers.MainController.varukorgsList.Add(temp);
         }
         public void RemoveFromCart(Produkt_model temp)
         {
-            varukorg.RemoveAll(x => x.Id.Equals(temp.Id));
+            Controllers.MainController.varukorgsList.RemoveAll(x => x.Id.Equals(temp.Id));
         }
         public void UpdateAmount(Produkt_model temp, int newAmount)
         {
@@ -21,7 +21,7 @@ namespace pjct_webshop.Models
             int amountNow = 0;
             AllProduct_model listUpdate = new AllProduct_model();
             listUpdate.GetAll();
-            foreach (Produkt_model item in varukorg)
+            foreach (Produkt_model item in Controllers.MainController.varukorgsList)
             {
                 if (item.Id==temp.Id)
                 {
@@ -37,17 +37,17 @@ namespace pjct_webshop.Models
                     {
                         for (; amountNow < newAmount; amountNow++)
                         {
-                            varukorg.Add(item);
+                            Controllers.MainController.varukorgsList.Add(item);
                         }
                         for (; amountNow > newAmount; amountNow--)
                         {
-                          varukorg.RemoveAt(varukorg.FindIndex(x=>x.Id==temp.Id));
+                            Controllers.MainController.varukorgsList.RemoveAt(Controllers.MainController.varukorgsList.FindIndex(x=>x.Id==temp.Id));
                         }
                     }
                 }
             }
         }
-        public List<Produkt_model> varukorg { get; set; }
+
     }
 
 

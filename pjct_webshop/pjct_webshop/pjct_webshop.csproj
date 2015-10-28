@@ -208,9 +208,12 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\bootstrap.validate.js" />
     <Content Include="Scripts\customCarousel.js" />
-    <Content Include="Scripts\Custom\AddToBasket.js" />
+    <Content Include="Scripts\Custom\AddOneToBasket.js" />
     <Content Include="Scripts\Custom\AdminScript.js" />
+    <Content Include="Scripts\Custom\ChangeBasketNumber.js" />
     <Content Include="Scripts\Custom\KassaScript.js" />
+    <Content Include="Scripts\Custom\RemoveFromBasket.js" />
+    <Content Include="Scripts\Custom\RemoveOneFromBasket.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.min.js" />

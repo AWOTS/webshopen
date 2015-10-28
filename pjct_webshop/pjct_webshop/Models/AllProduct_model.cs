@@ -16,7 +16,6 @@ namespace pjct_webshop.Models
             {
                 lista.Add(new Produkt_model(p));
             }
-
         }
     }
 }

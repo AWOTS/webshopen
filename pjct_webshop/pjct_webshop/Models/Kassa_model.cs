@@ -15,7 +15,6 @@ namespace pjct_webshop.Models
         {
             varukorg.RemoveAll(x => x.Id.Equals(temp.Id));
         }
-
         public void UpdateAmount(Produkt_model temp, int newAmount)
         {
             bool done = false;

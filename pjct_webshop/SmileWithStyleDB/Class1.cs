@@ -10,7 +10,7 @@ namespace SmileWithStyleDB
 {
     public class Class1
     {
-        SqlConnection myConnection = new SqlConnection("localhost/SQLEXPRESS;Catalog=db_smileWithStyle;Integrated Security=true");
+        SqlConnection myConnection = new SqlConnection(@"Data Source=ACADEMY27-VM\SQLEXPRESS;Initial Catalog=db_smileWithStyle;Integrated Security=True");
         SqlDataReader myReader = null;
 
         public void DatabaseConnection()
@@ -39,24 +39,32 @@ namespace SmileWithStyleDB
 
         public List<Product> getProductInfo()
         {
-            Product product;
             List<Product> products = new List<Product>();
-
+            DatabaseConnection();
             try
             {
-                var myCommand = new SqlCommand(
-                 "SELECT * FROM Procucts", myConnection);
+                var myCommand = new SqlCommand("SELECT * FROM Products", myConnection);
+                myReader = myCommand.ExecuteReader();
                 while (myReader.Read())
                 {
-                    product = new Product();
+                    Product product = new Product();
+                    product.Type = myReader["Type"].ToString();
+                    product.Name = myReader["Name"].ToString();
+                    product.Price = Convert.ToInt32(myReader["Price"].ToString());
+                    //public string Description { get; set; }
+                    //public int ArtNumber { get; set; }
+                    //public int Quantity { get; set; }
+                    //public string ImagePath { get; set; }
+                    //public bool AvailableWhenSold { get; set; }
+
                     products.Add(product);
                 }
             }
-
             catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
             }
+            CloseDatabaseConnection();
 
             return products;
         }
@@ -71,7 +79,7 @@ namespace SmileWithStyleDB
                 var myCommand = new SqlCommand(
                  "INSERT INTO Procucts VALUES", myConnection);
 
-               // "SELECT * FROM Procucts", myConnection);
+                // "SELECT * FROM Procucts", myConnection);
                 while (myReader.Read())
                 {
                     product = new Product();

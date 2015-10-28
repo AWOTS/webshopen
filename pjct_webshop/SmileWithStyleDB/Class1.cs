@@ -55,9 +55,7 @@ namespace SmileWithStyleDB
                     product.ArtNumber = Convert.ToInt32(myReader["ArtNumber"].ToString());
                     product.Quantity = Convert.ToInt32(myReader["Quantity"].ToString());
                     product.ImagePath = myReader["ImagePath"].ToString();
-                    product.AvailableWhenSold = Convert.ToInt32(myReader["AvailableWhenSold"].ToString()) == 1
-                        ? true
-                        : false;
+                    product.AvailableWhenSold = (bool)myReader["AvailableWhenSold"];
 
                     products.Add(product);
                 }

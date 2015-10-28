@@ -135,6 +135,11 @@
     <Content Include="Images\ProductsRectangled\IndexPicture1_1200x600.jpg" />
     <Content Include="Images\ProductsRectangled\IndexPicture2_1200x600.jpg" />
     <Content Include="Images\ProductsRectangled\IndexPicture3_1200x600.jpg" />
+    <Content Include="Images\ProductsSquared\1UP SUPER MARIO EARRINGS.png" />
+    <Content Include="Images\ProductsSquared\BIARITZ SIDE TABLE.png" />
+    <Content Include="Images\ProductsSquared\BLACK MAKRAMÉ BRACELET.png" />
+    <Content Include="Images\ProductsSquared\CLOAKED MAN.png" />
+    <Content Include="Images\ProductsSquared\COTÉ NORD BLACK.png" />
     <Content Include="Images\ProductsSquared\DSC_0504kopia_600x600.png" />
     <Content Include="Images\ProductsSquared\DSC_0518_600x600.png" />
     <Content Include="Images\ProductsSquared\DSC_0523_600x600.png" />
@@ -189,6 +194,11 @@
     <Content Include="Images\ProductsSquared\DSC_0975_600x600.png" />
     <Content Include="Images\ProductsSquared\DSC_0976_600x600.png" />
     <Content Include="Images\ProductsSquared\DSC_0988_600x600.png" />
+    <Content Include="Images\ProductsSquared\KUMIHIMO BRACELET.png" />
+    <Content Include="Images\ProductsSquared\LIGHTNING RING.png" />
+    <Content Include="Images\ProductsSquared\NINTENDO 8 BIT NECKLACE.png" />
+    <Content Include="Images\ProductsSquared\RAINBOW SILVER TEA LIGHT HOLDER.png" />
+    <Content Include="Images\ProductsSquared\RUMBA LEATHER RUG.png" />
     <Content Include="Images\slide-1.jpg" />
     <Content Include="Images\slide-2.jpg" />
     <Content Include="Images\slide-3.jpg" />

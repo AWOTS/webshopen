@@ -9,7 +9,7 @@ namespace pjct_webshop.Models
     {
         public void AddToCart(Produkt_model temp)
         {
-            varukorg.Add(temp);
+            Controllers.MainController.Add(temp);
         }
         public void RemoveFromCart(Produkt_model temp)
         {

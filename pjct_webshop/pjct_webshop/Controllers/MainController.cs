@@ -11,7 +11,7 @@ namespace pjct_webshop.Controllers
     public class MainController : Controller
     {
 
-        private static List<Produkt_model> varukorgsList = new List<Produkt_model>();
+        public static List<Produkt_model> varukorgsList = new List<Produkt_model>();
 
         // GET: Main
         public ActionResult Index()

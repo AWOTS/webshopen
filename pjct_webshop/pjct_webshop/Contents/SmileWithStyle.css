@@ -1,21 +1,22 @@
 ﻿body {
-    background-image: url('../Images/wallhaven--273501.jpg');
+    background-image: url('../Images/PaisleyBG.png');
     background-size: 100%;
     margin: 0;
 }
 
 .address-bar {
-  display: inherit;
-  text-align: center;
-  margin: 0;
-  margin-top: 5%;
-  padding: 0 0 40px;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 400;
-  color: #606060;
-  text-shadow: 1px 1px 2px #606060;
+    display: inherit;
+    text-align: center;
+    margin: 0;
+    background-image: url('../Images/PaisleyBG.png');
+    margin-top: 5%;
+    padding: 0 0 40px;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #606060;
+    text-shadow: 1px 1px 2px #606060;
 }
 
 .SmileWithStyleCopyright {

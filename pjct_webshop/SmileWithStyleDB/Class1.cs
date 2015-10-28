@@ -50,14 +50,12 @@ namespace SmileWithStyleDB
                     Product product = new Product();
                     product.Type = myReader["Type"].ToString();
                     product.Name = myReader["Name"].ToString();
-                    product.Price = Convert.ToInt32(myReader["Price"].ToString());
+                    product.Price = Convert.ToDouble(myReader["Price"]);
                     product.Description = myReader["Description"].ToString();
-                    product.ArtNumber = Convert.ToInt32(myReader["ArtNumber"].ToString());
+                    product.ArtNumber = myReader["ArtNumber"].ToString();
                     product.Quantity = Convert.ToInt32(myReader["Quantity"].ToString());
                     product.ImagePath = myReader["ImagePath"].ToString();
-                    product.AvailableWhenSold = Convert.ToInt32(myReader["AvailableWhenSold"].ToString()) == 1
-                        ? true
-                        : false;
+                    product.AvailableWhenSold = (bool)myReader["AvailableWhenSold"];
 
                     products.Add(product);
                 }

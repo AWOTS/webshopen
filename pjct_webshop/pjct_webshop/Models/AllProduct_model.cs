@@ -8,7 +8,8 @@ namespace pjct_webshop.Models
 {
     public class AllProduct_model
     {
-        public List<Produkt_model> lista = new List<Produkt_model>();
+     //   private List<Produkt_model> lista = new List<Produkt_model>();
+        public List<Produkt_model> lista { get; private set; }
         public void GetAll()
         {
             Class1 hej = new Class1();

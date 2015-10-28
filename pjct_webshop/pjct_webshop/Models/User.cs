@@ -30,14 +30,22 @@ namespace pjct_webshop.Models
         {
             using (SqlConnection conObj = new SqlConnection(myConnection))
             {
+                //SqlCommand myCommand = new SqlCommand("uspLogin", conObj);
+                //myCommand.CommandType = CommandType.StoredProcedure;
+                ////myCommand.Parameters.Clear();
+                //myCommand.Parameters.Add(new SqlParameter("@UserName", u.UserName));
+                //myCommand.Parameters.Add(new SqlParameter("@Password", u.Password));
+                //conObj.Open();
+                //var a = myCommand.ExecuteNonQuery();
+                //return 2;
+
                 SqlCommand myCommand = new SqlCommand("uspLogin", conObj);
                 myCommand.CommandType = CommandType.StoredProcedure;
-                myCommand.Parameters.Clear();
                 myCommand.Parameters.Add(new SqlParameter("@UserName", u.UserName));
                 myCommand.Parameters.Add(new SqlParameter("@Password", u.Password));
                 conObj.Open();
-                var a = myCommand.ExecuteNonQuery();
-                return 2;
+                return Convert.ToInt32(myCommand.ExecuteScalar());
+
             }
         }
     }

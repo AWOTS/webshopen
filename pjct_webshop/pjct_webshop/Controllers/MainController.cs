@@ -81,11 +81,15 @@ namespace pjct_webshop.Controllers
         public ActionResult AdminLogin(User u)
         {
             string message = "";
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                if (UL.CheckUserLogin(UserClass) > 0)
+                return View(u);
+            }
+            else if (ModelState.IsValid)
+            {
+                if (UL.CheckUserLogin(u) > 0)
                 {
-                    message = "Succé!";
+                    return RedirectToAction("AdminPage", "Main");
                 }
                 else
                 {
@@ -104,7 +108,7 @@ namespace pjct_webshop.Controllers
             }
             else
             {
-                return RedirectToAction("AdminPage", "Main");
+                return RedirectToAction("AdminLogin", "Main");
             }
 
         }

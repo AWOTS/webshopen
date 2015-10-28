@@ -20,7 +20,7 @@ namespace pjct_webshop.Models
             imgSource = p.ImagePath;
             amount = p.Quantity;
             availableWhenOutOfStock = p.AvailableWhenSold;
-            Id = p.ArtNumber;
+            ArtNr = p.ArtNumber;
         }
 
         public void SaveToDB()
@@ -33,10 +33,10 @@ namespace pjct_webshop.Models
         public string descripton { get; set; }
         public string type { get; set; }
         public string imgSource { get; set; }
-        public int price { get; set; }
+        public double price { get; set; }
         public int amount { get; set; }
         public bool availableWhenOutOfStock { get; set; }
-        public int Id { get; private set; }
+        public string ArtNr { get; private set; }
         
         public void saveProduct()
         {

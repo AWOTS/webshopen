@@ -27,7 +27,7 @@ namespace pjct_webshop.Models
         {
             Product p = new Product() { Name = this.name };
             Class1 c1 = new Class1();
-            c1.saveNewProduct(p);
+            //c1.saveNewProduct(p);
         }
         public string name { get; set; }
         public string descripton { get; set; }

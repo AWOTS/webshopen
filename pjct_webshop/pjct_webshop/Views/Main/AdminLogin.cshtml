@@ -17,12 +17,16 @@
             </p>
             <p>
                 <fieldset>
-                    <label for="UserName">Namn</label>
+                    @Html.ValidationMessageFor(m=>m.UserName)
+                    <br />
+                    @*@Html.LabelFor(x => x.UserName)*@
                     @Html.EditorFor(x=>x.UserName)
-                    @*<input type="text" name="UserName" id="UserName" value="Name / Email" class="text ui-widget-content ui-corner-all">*@
-                    <label for="Password">Lösenord</label>
+                    <br />
+                    <br />
+                    @Html.ValidationMessageFor(m => m.Password)
+                    <br />
+                    @*@Html.LabelFor(x => x.Password)*@
                     @Html.EditorFor(x=>x.Password)
-                   @* <input type="password" name="Password" id="Password" value="********" class="text ui-widget-content ui-corner-all">*@
                     <br />
                     <br />
                     <br />

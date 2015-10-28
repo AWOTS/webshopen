@@ -32,7 +32,12 @@ namespace pjct_webshop.Controllers
 
         public ActionResult Heminredning()
         {
-            AllProduct_model ap = new AllProduct_model();
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Heminredning(AllProduct_model ap)
+        {
             List<Produkt_model> modelList = new List<Produkt_model>();
             modelList.AddRange(ap.lista.FindAll(x => x.type.Equals("Heminredning")));
             return View(modelList);
@@ -40,28 +45,64 @@ namespace pjct_webshop.Controllers
 
         public ActionResult Halsband()
         {
-             AllProduct_model ap = new AllProduct_model();
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Halsband(AllProduct_model ap)
+        {
             List<Produkt_model> modelList = new List<Produkt_model>();
             modelList.AddRange(ap.lista.FindAll(x => x.type == "Halsband"));
             return View(modelList);
         }
+
         public ActionResult Ringar()
         {
-            AllProduct_model ap = new AllProduct_model();
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Ringar(AllProduct_model ap)
+        {
             List<Produkt_model> modelList = new List<Produkt_model>();
             modelList.AddRange(ap.lista.FindAll(x => x.type == "Ringar"));
             return View(modelList);
         }
+
         public ActionResult Örhängen()
         {
-            AllProduct_model ap = new AllProduct_model();
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Örhängen(AllProduct_model ap)
+        {
             List<Produkt_model> modelList = new List<Produkt_model>();
             modelList.AddRange(ap.lista.FindAll(x => x.type == "Örhängen"));
             return View(modelList);
         }
+
+        public ActionResult Armband()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Armband(AllProduct_model ap)
+        {
+            List<Produkt_model> modelList = new List<Produkt_model>();
+            modelList.AddRange(ap.lista.FindAll(x => x.type == "Armband"));
+            return View(modelList);
+        }
+
         public ActionResult Töjningar()
         {
-            AllProduct_model ap = new AllProduct_model();
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Töjningar(AllProduct_model ap)
+        {
             List<Produkt_model> modelList = new List<Produkt_model>();
             modelList.AddRange(ap.lista.FindAll(x => x.type == "Töjningar"));
             return View(modelList);

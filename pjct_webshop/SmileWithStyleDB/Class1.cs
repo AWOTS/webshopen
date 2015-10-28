@@ -51,11 +51,11 @@ namespace SmileWithStyleDB
                     product.Type = myReader["Type"].ToString();
                     product.Name = myReader["Name"].ToString();
                     product.Price = Convert.ToInt32(myReader["Price"].ToString());
-                    //public string Description { get; set; }
-                    //public int ArtNumber { get; set; }
-                    //public int Quantity { get; set; }
-                    //public string ImagePath { get; set; }
-                    //public bool AvailableWhenSold { get; set; }
+                    product.Description = myReader["Description"].ToString();
+                    product.ArtNumber = Convert.ToInt32(myReader["ArtNumber"].ToString());
+                    product.Quantity = Convert.ToInt32(myReader["Quantity"].ToString());
+                    product.ImagePath = myReader["ImagePath"].ToString();
+                    product.AvailableWhenSold = (bool)myReader["AvailableWhenSold"];
 
                     products.Add(product);
                 }
@@ -123,6 +123,30 @@ namespace SmileWithStyleDB
             else
             {
                 return orders;
+            }
+        }
+
+        public void ProductsBought(int nr, int amount)
+        {
+            List<Product> products = new List<Product>();
+            DatabaseConnection();
+            if (amount > 0)
+            {
+                try
+                {
+                    var myCommand = new SqlCommand($"UPDATE Products set Quantity=(Quantity - {amount}) WHERE ArtNumber = {nr}", myConnection);
+                    myCommand.ExecuteNonQuery();
+                }
+
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.ToString());
+                }
+
+                finally
+                {
+                    CloseDatabaseConnection();
+                }
             }
         }
     }

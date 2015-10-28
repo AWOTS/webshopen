@@ -51,11 +51,13 @@ namespace SmileWithStyleDB
                     product.Type = myReader["Type"].ToString();
                     product.Name = myReader["Name"].ToString();
                     product.Price = Convert.ToInt32(myReader["Price"].ToString());
-                    //public string Description { get; set; }
-                    //public int ArtNumber { get; set; }
-                    //public int Quantity { get; set; }
-                    //public string ImagePath { get; set; }
-                    //public bool AvailableWhenSold { get; set; }
+                    product.Description = myReader["Description"].ToString();
+                    product.ArtNumber = Convert.ToInt32(myReader["ArtNumber"].ToString());
+                    product.Quantity = Convert.ToInt32(myReader["Quantity"].ToString());
+                    product.ImagePath = myReader["ImagePath"].ToString();
+                    product.AvailableWhenSold = Convert.ToInt32(myReader["AvailableWhenSold"].ToString()) == 1
+                        ? true
+                        : false;
 
                     products.Add(product);
                 }

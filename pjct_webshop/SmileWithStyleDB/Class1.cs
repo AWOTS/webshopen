@@ -125,5 +125,29 @@ namespace SmileWithStyleDB
                 return orders;
             }
         }
+
+        public void ProductsBought(int nr, int amount)
+        {
+            List<Product> products = new List<Product>();
+            DatabaseConnection();
+            if (amount > 0)
+            {
+                try
+                {
+                    var myCommand = new SqlCommand($"UPDATE Products set Quantity=(Quantity - {amount}) WHERE ArtNumber = {nr}", myConnection);
+                    myCommand.ExecuteNonQuery();
+                }
+
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.ToString());
+                }
+
+                finally
+                {
+                    CloseDatabaseConnection();
+                }
+            }
+        }
     }
 }

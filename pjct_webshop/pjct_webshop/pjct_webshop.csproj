@@ -131,7 +131,9 @@
     <Content Include="Global.asax" />
     <Content Include="Images\bg.jpg" />
     <Content Include="Images\HEADER.png" />
+    <Content Include="Images\header2colorized.png" />
     <Content Include="Images\intro-pic.jpg" />
+    <Content Include="Images\PaisleyBG.png" />
     <Content Include="Images\ProductsRectangled\IndexPicture1_1200x600.jpg" />
     <Content Include="Images\ProductsRectangled\IndexPicture2_1200x600.jpg" />
     <Content Include="Images\ProductsRectangled\IndexPicture3_1200x600.jpg" />

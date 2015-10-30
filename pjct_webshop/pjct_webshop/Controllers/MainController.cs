@@ -30,7 +30,11 @@ namespace pjct_webshop.Controllers
         }
         public ActionResult Kassa()
         {
-            return View(Controllers.MainController.varukorgsList);
+            AllProduct_model ap = new AllProduct_model();
+            ap.GetAll();
+            List<Produkt_model> modelList = new List<Produkt_model>();
+            modelList.AddRange(ap.lista.FindAll(x => x.type.Equals("Heminredning")));
+            return View(modelList);
         }
 
         public ActionResult Heminredning()

@@ -16,7 +16,7 @@
     $( "#dialog" ).dialog({
       autoOpen: false,
     });       
-    $( "#opener" ).click(function() {
+    $( "#kknapp" ).click(function() {
       $( "#dialog" ).dialog( "open" );
     });
   });
@@ -31,7 +31,7 @@
 
                 <tr>
                     <td class="col-md-8">
-                        <img src="@item.imgSource" />
+                        <img src="@Url.Content(item.imgSource) class="img-responsive" />
                     </td>
                     <td class="col-md-4">
                         <div class="clearfix">

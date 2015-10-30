@@ -136,5 +136,11 @@ namespace pjct_webshop.Controllers
         {
             return View();
         }
+
+        public ActionResult SearchResult()
+        {
+            AllProduct_model products = new AllProduct_model();
+            return View();
+        }
     }
 }

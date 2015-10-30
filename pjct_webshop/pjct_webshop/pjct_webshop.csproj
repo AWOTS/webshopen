@@ -262,6 +262,7 @@
     <Content Include="Views\Main\Örhängen.cshtml" />
     <Content Include="Views\Main\Töjningar.cshtml" />
     <Content Include="Views\Main\Kontaktinfo.cshtml" />
+    <Content Include="Views\Main\SearchResult.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

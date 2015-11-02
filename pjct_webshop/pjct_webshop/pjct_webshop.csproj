@@ -238,6 +238,7 @@
     <Compile Include="Models\Kassa_model.cs" />
     <Compile Include="Models\Order_model.cs" />
     <Compile Include="Models\Produkt_model.cs" />
+    <Compile Include="Models\SearchModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -261,7 +262,6 @@
     <Content Include="Views\Main\Ringar.cshtml" />
     <Content Include="Views\Main\Örhängen.cshtml" />
     <Content Include="Views\Main\Töjningar.cshtml" />
-    <Content Include="Views\Main\Kontaktinfo.cshtml" />
     <Content Include="Views\Main\SearchResult.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

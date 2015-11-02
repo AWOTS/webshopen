@@ -33,7 +33,7 @@ namespace pjct_webshop.Controllers
             AllProduct_model ap = new AllProduct_model();
             ap.GetAll();
             List<Produkt_model> modelList = new List<Produkt_model>();
-            modelList.AddRange(ap.lista.FindAll(x => x.type.Equals("Heminredning")));
+            modelList.AddRange(ap.lista.FindAll(x => x.Type.Equals("Heminredning")));
             return View(modelList);
         }
 
@@ -42,7 +42,7 @@ namespace pjct_webshop.Controllers
             AllProduct_model ap = new AllProduct_model();
             ap.GetAll();
             List<Produkt_model> modelList = new List<Produkt_model>();
-            modelList.AddRange(ap.lista.FindAll(x => x.type.Equals("Heminredning")));
+            modelList.AddRange(ap.lista.FindAll(x => x.Type.Equals("Heminredning")));
             return View(modelList);
         }
 
@@ -51,7 +51,7 @@ namespace pjct_webshop.Controllers
             AllProduct_model ap = new AllProduct_model();
             ap.GetAll();
             List<Produkt_model> modelList = new List<Produkt_model>();
-            modelList.AddRange(ap.lista.FindAll(x => x.type.Equals("Halsband")));
+            modelList.AddRange(ap.lista.FindAll(x => x.Type.Equals("Halsband")));
             return View(modelList);
         }
 
@@ -60,7 +60,7 @@ namespace pjct_webshop.Controllers
             AllProduct_model ap = new AllProduct_model();
             ap.GetAll();
             List<Produkt_model> modelList = new List<Produkt_model>();
-            modelList.AddRange(ap.lista.FindAll(x => x.type.Equals("Ringar")));
+            modelList.AddRange(ap.lista.FindAll(x => x.Type.Equals("Ringar")));
             return View(modelList);
         }
 
@@ -69,7 +69,7 @@ namespace pjct_webshop.Controllers
             AllProduct_model ap = new AllProduct_model();
             ap.GetAll();
             List<Produkt_model> modelList = new List<Produkt_model>();
-            modelList.AddRange(ap.lista.FindAll(x => x.type.Equals("Örhängen")));
+            modelList.AddRange(ap.lista.FindAll(x => x.Type.Equals("Örhängen")));
             return View(modelList);
         }
 
@@ -78,7 +78,7 @@ namespace pjct_webshop.Controllers
             AllProduct_model ap = new AllProduct_model();
             ap.GetAll();
             List<Produkt_model> modelList = new List<Produkt_model>();
-            modelList.AddRange(ap.lista.FindAll(x => x.type.Equals("Armband")));
+            modelList.AddRange(ap.lista.FindAll(x => x.Type.Equals("Armband")));
             return View(modelList);
         }
 
@@ -87,7 +87,7 @@ namespace pjct_webshop.Controllers
             AllProduct_model ap = new AllProduct_model();
             ap.GetAll();
             List<Produkt_model> modelList = new List<Produkt_model>();
-            modelList.AddRange(ap.lista.FindAll(x => x.type.Equals("Töjningar")));
+            modelList.AddRange(ap.lista.FindAll(x => x.Type.Equals("Töjningar")));
             return View(modelList);
         }
 

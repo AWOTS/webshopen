@@ -32,10 +32,10 @@
                 <tr>
                     <td class="col-md-8">
                         <div class="box col-md-3" >
-                            <img src="@Url.Content(item.imgSource)" class="img-responsive" />
+                            <img src="@Url.Content(item.ImagePath)" class="img-responsive" />
                         </div>
                         <div class="col-md-1"></div>
-                        <div class="text-center">@item.descripton.ToString();</div>
+                        <div class="text-center">@item.Description.ToString();</div>
 
                     </td>
                     <td class="col-md-4">
@@ -45,7 +45,7 @@
                                 <span class="input-group-btn">
                                     <a href="#" class="btn btn-primary removeOneFromCart"><span class="glyphicon glyphicon-minus-sign"></span></a>
                                 </span>
-                                <input type="number" class="form-control addNumberToCart" placeholder="@item.amount.ToString()">
+                                <input type="number" class="form-control addNumberToCart" placeholder="@item.Quantity.ToString()">
                                 <span class="input-group-btn">
 
                                     <a href="#" class="btn btn-primary addOneToCart"><span class="glyphicon glyphicon-plus-sign"></span></a>

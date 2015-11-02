@@ -67,7 +67,7 @@
                     <li>
                         <form class="navbar-form navbar-left" role="search">
                             <div class="form-group">
-                                <input type="search" href="/Main/SearchResult" class="form-control" placeholder="Sök">
+                                <input type="search" id="searchResult" href="/Main/SearchResult" class="form-control" placeholder="Sök">
                             </div>
                         </form>
                     </li>
@@ -84,14 +84,12 @@
                                     </a>
                                 </span>
                             </div>
-            </div>
-            @*</div>*@
-            </form>
-            </li>
-            </ul>
+                        </form>
+                    </li>
+                </ul>
 
-        </div>
-        <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
@@ -100,12 +98,11 @@
         @RenderBody()
     </div>
 </body>
-
+</html>
 <footer>
     <div class="container">
         <div class="row">
             <div class="address-bar">Nico-Lina | Bergsrådsvägen 79 | 12842 Bagarmossen | 076-7117187</div>
-
             <div class="col-lg-12 text-center SmileWithStyleCopyright">
                 <p>
                     Copyright <a href="/Main/AdminLogin">
@@ -116,4 +113,3 @@
         </div>
     </div>
 </footer>
-</html>

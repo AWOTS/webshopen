@@ -10,7 +10,7 @@ namespace SmileWithStyleDB
 {
     public class Class1
     {
-        SqlConnection myConnection = new SqlConnection(@"Data Source=ACADEMY27-VM\SQLEXPRESS;Initial Catalog=db_smileWithStyle;Integrated Security=True");
+        SqlConnection myConnection = new SqlConnection(@"Data Source=ACADEMY31-VM\SQLEXPRESS;Initial Catalog=db_smileWithStyle;Integrated Security=True");
         SqlDataReader myReader = null;
 
         public void DatabaseConnection()

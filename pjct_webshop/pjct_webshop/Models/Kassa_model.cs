@@ -13,7 +13,7 @@ namespace pjct_webshop.Models
         }
         public void RemoveFromCart(Produkt_model temp)
         {
-            Controllers.MainController.varukorgsList.RemoveAll(x => x.ArtNr.Equals(temp.ArtNr));
+            Controllers.MainController.varukorgsList.RemoveAll(x => x.ArtNumber.Equals(temp.ArtNumber));
         }
         public void UpdateAmount(Produkt_model temp, int newAmount)
         {
@@ -23,17 +23,17 @@ namespace pjct_webshop.Models
             listUpdate.GetAll();
             foreach (Produkt_model item in Controllers.MainController.varukorgsList)
             {
-                if (item.ArtNr==temp.ArtNr)
+                if (item.ArtNumber==temp.ArtNumber)
                 {
                     amountNow++;
                 }
             }
             foreach (Produkt_model item in listUpdate.lista)
             {
-                if (temp.ArtNr == item.ArtNr && !done)
+                if (temp.ArtNumber == item.ArtNumber && !done)
                 {
                     done = true;
-                    if (item.amount >= newAmount)
+                    if (item.Quantity >= newAmount)
                     {
                         for (; amountNow < newAmount; amountNow++)
                         {
@@ -41,7 +41,7 @@ namespace pjct_webshop.Models
                         }
                         for (; amountNow > newAmount; amountNow--)
                         {
-                            Controllers.MainController.varukorgsList.RemoveAt(Controllers.MainController.varukorgsList.FindIndex(x=>x.ArtNr==temp.ArtNr));
+                            Controllers.MainController.varukorgsList.RemoveAt(Controllers.MainController.varukorgsList.FindIndex(x=>x.ArtNumber==temp.ArtNumber));
                         }
                     }
                 }

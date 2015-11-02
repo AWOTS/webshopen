@@ -13,34 +13,33 @@ namespace pjct_webshop.Models
         { }
         public Produkt_model(Product p)
         {
-            name = p.Name;
-            descripton = p.Description;
-            price = p.Price;
-            type = p.Type;
-            imgSource = p.ImagePath;
-            amount = p.Quantity;
-            availableWhenOutOfStock = p.AvailableWhenSold;
-            ArtNr = p.ArtNumber;
+            Name = p.Name;
+            Description = p.Description;
+            Price = p.Price;
+            Type = p.Type;
+            ImagePath = p.ImagePath;
+            Quantity = p.Quantity;
+            AvailableWhenSold = p.AvailableWhenSold;
+            ArtNumber = p.ArtNumber;
         }
 
         public void SaveToDB()
         {
-            Product p = new Product() { Name = this.name };
+            Product p = new Product() { Name = this.Name };
             Class1 c1 = new Class1();
             //c1.saveNewProduct(p);
         }
-        public string name { get; set; }
-        public string descripton { get; set; }
-        public string type { get; set; }
-        public string imgSource { get; set; }
-        public double price { get; set; }
-        public int amount { get; set; }
-        public bool availableWhenOutOfStock { get; set; }
-        public string ArtNr { get; private set; }
-        
+        public string Type { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string ArtNumber { get; set; }
+        public int Quantity { get; set; }
+        public string ImagePath { get; set; }
+        public bool AvailableWhenSold { get; set; }
+        public double Price { get; set; }
         public void saveProduct()
         {
-            Product p =new Product() {Name = this.name};
+            Product p =new Product() {Name = this.Name};
         }
     }
 }

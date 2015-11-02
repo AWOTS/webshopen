@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EasyHashProvider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EasyHashProvider.1.0.0.0\lib\net45\EasyHashProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -238,6 +242,7 @@
     <Compile Include="Models\Kassa_model.cs" />
     <Compile Include="Models\Order_model.cs" />
     <Compile Include="Models\Produkt_model.cs" />
+    <Compile Include="Models\SearchModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -261,7 +266,6 @@
     <Content Include="Views\Main\Ringar.cshtml" />
     <Content Include="Views\Main\Örhängen.cshtml" />
     <Content Include="Views\Main\Töjningar.cshtml" />
-    <Content Include="Views\Main\Kontaktinfo.cshtml" />
     <Content Include="Views\Main\SearchResult.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

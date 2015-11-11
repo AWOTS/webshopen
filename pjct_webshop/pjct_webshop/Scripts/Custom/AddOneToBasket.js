@@ -1,13 +1,5 @@
 ﻿$(document).ready(function () {
-    $("#addOneToCart").click(function () {
-        alert$("#")
-    });
-});
-
-
-$(document).ready(function () {
-    $("#AddNewProductButton").click(function () {
-        alert($("#NameNewProduct").val() + " " + $("#DescriptionNewProduct").val() + " " + $("#ImageNewProduct").val()
-            + " " + $("#NumbersLeftNewProduct").val() + " " + $("#PriceNewProduct").val());
+    $("#@product.ArtNumber").click(function () {
+        alert($(this).attr('id'));
     });
 });
